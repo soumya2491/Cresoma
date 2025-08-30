@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cresoma - Immersive 3D Collaboration Platform</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">CRESOMA</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#games">Games</a></li>
+                <!-- <li><a href="hologram.html">AI Hologram</a></li> -->
+                <li><a href="dashboard.html">Live Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <!-- <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas id="hero-canvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Welcome to the Future</span>
+                    <span class="title-line">of Collaboration</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Experience immersive 3D whiteboarding, interactive games, and AI-powered holograms in real-time
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick=" window.location.href='dashboard.html' ">Start Creating</button>
+                    <button class="btn btn-secondary">Watch Demo</button> -->
+                    <!-- <div class="auth-buttons">
+                        <a href="login.html" class="btn btn-outline">Login</a>
+                        <a href="signup.html" class="btn btn-accent">Sign Up</a>
+                    </div> -->
+                <!-- </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="element element-1">🎨</div>
+                    <div class="element element-2">🤖</div>
+                    <div class="element element-3">🎮</div>
+                    <div class="element element-4">✨</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div> -->
+    <!-- </section> -->
+
+    <!-- Features Section -->
+    <!-- <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Revolutionary Features</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Live 3D Whiteboard</h3>
+                    <p>Collaborate in real-time with immersive 3D drawing tools. Create, sketch, and design together in a virtual space.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Interactive Games</h3>
+                    <p>Built-in games like Flappy Bird and more. Take breaks while staying connected with your team.</p>
+                </div> -->
+                <!-- <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Hologram Creator</h3>
+                    <p>Generate stunning holograms with AI. Bring your ideas to life with voice commands and real-time rendering.</p>
+                </div> -->
+                <!-- <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon">👥</div>
+                    <h3>Real-time Collaboration</h3>
+                    <p>Work together seamlessly with multiple users. See everyone's contributions in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Games Section -->
+    <!-- <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title">Built-in Entertainment</h2>
+            <div class="games-showcase">
+                <div class="game-preview">
+                    <div class="game-window">
+                        <div class="game-header">
+                            <span class="game-title">Flappy Bird</span>
+                            <div class="game-controls">
+                                <span class="control-dot"></span>
+                                <span class="control-dot"></span>
+                                <span class="control-dot"></span>
+                            </div>
+                        </div>
+                        <div class="game-screen">
+                            <div class="bird"></div>
+                            <div class="pipe pipe-1"></div>
+                            <div class="pipe pipe-2"></div>
+                            <div class="score">0</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="games-info">
+                    <h3>Take a Break, Stay Connected</h3>
+                    <p>Our platform includes various mini-games to keep you engaged while collaborating. Perfect for team building and creative breaks.</p>
+                    <ul class="games-list">
+                        <li>🎮 Flappy Bird</li>
+                        <li>🧩 Puzzle Games</li>
+                        <li>🎯 Target Practice</li>
+                        <li>🏓 Pong</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- AI Hologram Section -->
+    <!-- <section id="ai" class="ai-section" style="display: none;">
+        <div class="container">
+            <h2 class="section-title">AI-Powered Holograms</h2>
+            <div class="ai-demo">
+                <div class="hologram-container">
+                    <div class="hologram-effect">
+                        <div class="hologram-sphere"></div>
+                        <div class="hologram-lines">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </div>
+                    </div>
+                    <div class="ai-controls">
+                        <div class="voice-indicator">
+                            <div class="mic-icon">🎤</div>
+                            <div class="voice-waves">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <p class="ai-prompt">"Create a robot hologram"</p>
+                    </div>
+                </div>
+                                    <div class="ai-info">
+                        <h3>Voice-Activated Creation</h3>
+                        <p>Simply speak your ideas and watch as our AI generates stunning 3D holograms in real-time. Perfect for prototyping and visualization.</p>
+                        <div class="ai-features">
+                            <div class="ai-feature">
+                                <span class="feature-bullet">✨</span>
+                                <span>Instant Generation</span>
+                            </div>
+                            <div class="ai-feature">
+                                <span class="feature-bullet">🎨</span>
+                                <span>Customizable Designs</span>
+                            </div>
+                            <div class="ai-feature">
+                                <span class="feature-bullet">👥</span>
+                                <span>Shared Experience</span>
+                            </div>
+                        </div>
+                        <div class="ai-cta">
+                            <a href="hologram.html" class="btn btn-primary">Try AI Hologram Creator</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Ready to Experience the Future?</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Join Cresoma Today</h3>
+                    <p>Be part of the next generation of collaborative technology. Create, play, and innovate together.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>hello@cresoma.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🌐</span>
+                            <span>www.cresoma.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your project" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <!-- <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">CRESOMA</span>
+                    <p>Shaping the future of collaboration</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">API</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Status</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cresoma. All rights reserved.</p>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- <script src="script.js"></script> -->
+</body>
+</html> 
