@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -826,6 +825,7 @@ section {
 .form-group textarea::placeholder {
     color: var(--text-secondary);
 }
+
 /* Footer */
 .footer {
     background: var(--darker-bg);
@@ -893,3 +893,77 @@ section {
     color: var(--text-secondary);
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .auth-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .games-showcase,
+    .ai-demo,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .floating-elements {
+        height: 300px;
+    }
+    
+    .element {
+        font-size: 2rem;
+    }
+}
