@@ -83,23 +83,23 @@ function initFormValidation() {
     });
 }
 
-// function validateName(input, fieldName) {
-//     const name = input.value.trim();
+function validateName(input, fieldName) {
+    const name = input.value.trim();
     
-//     if (name === '') {
-//         showInputError(input, `${fieldName} is required`);
-//         return false;
-//     } else if (name.length < 2) {
-//         showInputError(input, `${fieldName} must be at least 2 characters`);
-//         return false;
-//     } else if (!/^[a-zA-Z\s]+$/.test(name)) {
-//         showInputError(input, `${fieldName} can only contain letters and spaces`);
-//         return false;
-//     } else {
-//         showInputSuccess(input);
-//         return true;
-//     }
-// }
+    if (name === '') {
+        showInputError(input, `${fieldName} is required`);
+        return false;
+    } else if (name.length < 2) {
+        showInputError(input, `${fieldName} must be at least 2 characters`);
+        return false;
+    } else if (!/^[a-zA-Z\s]+$/.test(name)) {
+        showInputError(input, `${fieldName} can only contain letters and spaces`);
+        return false;
+    } else {
+        showInputSuccess(input);
+        return true;
+    }
+}
 
 function validateEmail(input) {
     const email = input.value.trim();
