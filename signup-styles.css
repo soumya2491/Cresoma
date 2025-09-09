@@ -557,7 +557,7 @@ body {
 }
 
 /* Cosmic Particles */
-/* .cosmic-particles {
+.cosmic-particles {
     position: fixed;
     top: 0;
     left: 0;
@@ -652,7 +652,7 @@ body {
         transform: translateY(-100px) scale(1) rotate(360deg);
         opacity: 0;
     }
-} */
+}
 
 /* Nebula Effect */
 .nebula-effect {
